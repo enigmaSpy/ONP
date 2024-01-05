@@ -1,0 +1,40 @@
+.table {
+    border-collapse: collapse;
+    border: 1px solid #555;
+    font-size: 18px;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+tr {
+    border-bottom: 1px solid #666;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #666;
+    text-align: center;
+    
+}
+
+th {
+    background-color: #555;
+    color: #ffd9d9;
+}
+
+tr:nth-child(even) {
+    background-color: #444;
+}
+
+tr:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+  th, td{
+    width: 100%;
+    padding: 10px;  
+  }
+}

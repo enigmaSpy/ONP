@@ -1,0 +1,76 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #4b4b4b;
+    border-radius: 5px;
+    background-color: #444;
+    box-shadow: 0 0 8px 1px rgba(80, 80, 80, 0.913);
+}
+.form__tittle{
+    margin:0 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.form__input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+.form__input::placeholder{
+    color: #ccc;
+}
+.form__result{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    p{
+        font-size: 18px;
+    }
+    span{
+        margin-left: 8px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+}
+.form__button{
+    width: fit-content;
+    align-self: flex-end;
+    padding: 10px;
+    border: 1px solid #1616165c;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #fff;
+    cursor: pointer;
+}
+.form__button:hover{
+    background-color: #5d5d5dd6;
+    animation: button-hover 1s  ;
+}
+@keyframes button-hover{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    100%{
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+}
+@media screen and (max-width: 900px) {
+    .form{
+        width: 100%;
+        min-width: fit-content;
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .form__input{
+        font-size: 1.1rem;
+    }
+}

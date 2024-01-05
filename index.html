@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000">
+    <meta
+      name="description"
+      content="Narzędzie do konwersji wyrażeń infixowych na postfixowe. Szybko i łatwo przekształć swoje wyrażenia matematyczne. infix to postfix. best infix to postfix. Przelicz infix na postfix. Konwerter ONP, ONP, Kalkulator ONP " />
+    <title>Document</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/table.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <script src="service-worker.js" defer></script>
+  </head>
+  </head>
+  <body>
+    <form class="form">
+      <h1 class="form__tittle">ONP</h1>
+      <input type="text" class="form__input" placeholder="a+b" />
+      <button class="form__button">Generuj</button>
+      <div class="form__result">
+        <p>Infix:<span class="form__result--text"></span></p>
+        <p>Postfix:<span class="form__result--text"></span></p>
+      </div>
+    </form>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Takt</th>
+          <th>Wejście</th>
+          <th>Stos</th>
+          <th>Wyjście</th>
+        </tr>
+      </thead>
+      <tbody class="table__tbody"></tbody>
+    </table>
+  </body>
+</html>
