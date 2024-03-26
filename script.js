@@ -34,6 +34,7 @@ const textResults =(inf,pos)=>{
 const checkIfValid = () => {
     return new Promise((resolve) => {
         const word = userInput.value.trim();
+        word = word.toLowerCase();
         if (word === "") resolve("empty");
         if (word.length < 3) resolve("toShort")
         const binaryOperation = operations.slice(1, 6);
